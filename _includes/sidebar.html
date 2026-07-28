@@ -1,5 +1,7 @@
 <header class="site-header">
-  <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+  <a class="site-title" href="{{ '/' | relative_url }}">
+    <img src="{{ '/assets/images/Logo.svg' | relative_url }}" alt="{{ site.title }}" class="logo">
+  </a>
   {% if site.tagline %}<p class="site-tagline">{{ site.tagline }}</p>{% endif %}
   <nav class="site-nav">
     <ul>

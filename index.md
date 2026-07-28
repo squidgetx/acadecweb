@@ -17,5 +17,5 @@ Before my Ph.D., I studied interactive telecommunications at NYU Tisch and worke
 
 You can reach me at saz[300 + 10]@nyu.edu
 
-See my [research](/research/) for current projects and working papers.
+See my [research](/research/) for current projects and working papers, or my [CV]({{ '/cv-1.pdf' | relative_url }}).
 
