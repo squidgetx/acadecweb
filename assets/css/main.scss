@@ -121,9 +121,8 @@ hr {
 
 .logo {
   display: block;
-  width: 100%;
-  max-width: 160px;
-  height: auto;
+  width: auto;
+  max-height: 56px;
 }
 
 .site-tagline {
@@ -133,17 +132,20 @@ hr {
 }
 
 .site-nav {
+  font-size: 1.1em;
+  line-height: 1.25em;
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  li { margin-bottom: 8px; }
+  li { margin-bottom: 0; }
 }
 
 .nav-link {
   font-family: $heading-font;
   color: $gray-dark;
+  text-transform: lowercase;
   &:hover { text-decoration: underline; }
   &.active { color: $accent; }
 }
