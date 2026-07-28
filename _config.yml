@@ -1,0 +1,26 @@
+title: Sylvan Zheng
+tagline: ""
+email: your.email@example.com
+description: >-
+  Academic website of Sylvan Zheng.
+baseurl: ""
+url: ""
+author: Sylvan Zheng
+
+# Navigation links shown in the sidebar (label + page url)
+nav:
+  - title: About
+    url: /
+  - title: Research
+    url: /research/
+
+# Build settings
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .jekyll-cache

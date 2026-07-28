@@ -1,0 +1,235 @@
+---
+# Front matter dashes tell Jekyll to process this file with the Sass converter.
+---
+
+// ── Palette (from sylvan.fish / squidgetx.github.io) ───────────────────────
+$bg:            #fffeff; // near-white, faint magenta tint
+$text:          #0a100a; // near-black, dark green-black
+$accent:        #282;    // green — links & accents
+$gray-muted:    #828282; // meta text, blockquotes
+$gray-dark:     #424242; // site title, UI
+$rule:          #e8e8e8; // borders / rules
+$code-bg:       #eef;    // pale blue code background
+$tag-bg:        #f5f9f1; // pale green
+
+// ── Fonts ──────────────────────────────────────────────────────────────────
+$body-font:    Helvetica, sans-serif;
+$heading-font: "Futura", Helvetica, sans-serif;
+
+// ── Layout metrics ───────────────────────────────────────────────────────────
+$sidebar-width: 242px;
+$content-pad:   38px;
+$content-max:   800px;
+$breakpoint:    1000px;
+
+// ── Reset-ish ────────────────────────────────────────────────────────────────
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font: 400 14pt/1.5 $body-font;
+  color: $text;
+  background-color: $bg;
+}
+
+// ── Typography ───────────────────────────────────────────────────────────────
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 0 19px;
+}
+
+h1 { font-size: 1.5em; }
+h2 { font-size: 1.25em; }
+h3 { font-size: 1.1em; }
+h4 { font-size: 1em; }
+
+p, ul, ol {
+  margin: 0 0 19px;
+}
+
+ul, ol { padding-left: 38px; }
+
+a {
+  color: $accent;
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+}
+
+blockquote {
+  color: $gray-muted;
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: -1px;
+  border-left: 4px solid $rule;
+  margin: 0 0 19px;
+  padding-left: 19px;
+}
+
+code, pre {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-size: 15px;
+  background-color: $code-bg;
+  border: 1px solid $rule;
+  border-radius: 3px;
+}
+
+code { padding: 1px 5px; }
+
+pre {
+  padding: 12px 16px;
+  overflow-x: auto;
+  code { border: 0; padding: 0; }
+}
+
+img { max-width: 100%; height: auto; }
+
+hr {
+  border: 0;
+  border-top: 1px solid $rule;
+  margin: 38px 0;
+}
+
+.meta,
+.post-meta {
+  color: $gray-muted;
+  font-size: 12.6pt;
+}
+
+// ── Fixed left sidebar ───────────────────────────────────────────────────────
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $sidebar-width;
+  height: 100%;
+  padding: $content-pad;
+  background-color: $bg;
+  border-right: 2px dashed black;
+  overflow-y: auto;
+}
+
+.site-title {
+  display: block;
+  font-family: $heading-font;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: $gray-dark;
+  margin-bottom: 8px;
+  &:hover { text-decoration: none; }
+}
+
+.site-tagline {
+  color: $gray-muted;
+  font-size: 12.6pt;
+  margin: 0 0 38px;
+}
+
+.site-nav {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li { margin-bottom: 8px; }
+}
+
+.nav-link {
+  font-family: $heading-font;
+  color: $gray-dark;
+  &:hover { text-decoration: underline; }
+  &.active { color: $accent; }
+}
+
+// ── Content column ───────────────────────────────────────────────────────────
+.page-content {
+  margin-left: $sidebar-width;
+  padding: $content-pad;
+}
+
+.wrapper-content {
+  max-width: $content-max;
+}
+
+// ── Headshot ─────────────────────────────────────────────────────────────────
+.headshot {
+  display: block;
+  width: 220px;
+  max-width: 60%;
+  margin: 0 0 19px;
+  border: 1px solid $rule;
+}
+
+// ── Publication list helpers ────────────────────────────────────────────────
+.pub-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pub {
+  margin-bottom: 38px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid $rule;
+  &:last-child { border-bottom: 0; }
+}
+
+.pub-title { font-weight: 600; }
+
+.pub-authors,
+.pub-venue { 
+  color: $gray-muted; 
+  font-size: 0.8em;
+}
+
+.pub-venue {
+  font-style: italic;
+}
+
+.pub-desc {
+  margin-top: 8px;
+  font-size: 12.6pt;
+  line-height: 1.45;
+}
+
+.pub-abstract {
+  margin: 8px 0 0;
+  font-size: 11pt;
+  line-height: 1.5;
+  color: #333;
+}
+
+.pub-links {
+  margin-top: 8px;
+  font-size: 12.6pt;
+}
+
+// ── Responsive: collapse sidebar below breakpoint ────────────────────────────
+@media screen and (max-width: $breakpoint) {
+  .site-header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: 0;
+    border-bottom: 3.75px dashed black;
+  }
+
+  .site-tagline { margin-bottom: 19px; }
+
+  .site-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 19px;
+  }
+  .site-nav li { margin-bottom: 0; }
+
+  .page-content {
+    margin-left: 0;
+  }
+}
