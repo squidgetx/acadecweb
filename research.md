@@ -22,7 +22,6 @@ permalink: /research/
     <div class="pub-authors">with Hye Young You</div>
     <p class="pub-abstract">How does news coverage track elite political debate? We examine whether mainstream newspaper coverage of climate change reflects the terms of that debate or filters them. Using a large-language-model pipeline, we extract 176,435 sources from 30,988 climate articles across six major U.S. newspapers (2012&ndash;2022) and classify them, alongside 26,868 congressional speeches (1994&ndash;2023), along two dimensions: scientific urgency&ndash;skepticism and economic cost&ndash;benefit. We document a widening politics&ndash;coverage gap after 2016. In Congress, scientific and economic arguments remain similarly prevalent, whereas mainstream newspapers increasingly emphasize scientific urgency while sharply reducing attention to the economic consequences of climate policy. By contrast, climate skepticism declines in parallel across both Congress and the press. Linking articles to career histories for 3,688 journalists, we show that this divergence is driven primarily by changes in journalist composition. These findings demonstrate how source selection and newsroom composition shape the political information citizens receive.</p>
     <div class="pub-links">
-      <a href="https://sylvan.fish/docs/Climate_News.pdf">PDF</a>
     </div>
   </li>
   <li class="pub" id="ambiguity-robust-dictionaries">
@@ -37,13 +36,16 @@ permalink: /research/
     <div class="pub-title"><a class="pub-title-link" href="#digital-rubbernecking">Digital Rubbernecking: Attention-based versus Engagement-based Ranking</a></div>
     <div class="pub-authors">with Jennifer Allen and Chris Barrie</div>
     <div class="pub-abstract">Social media platforms increasingly use attention signals to rank content. Instead of using network based measures or engagement (ie, likes or retweets), platforms optimize for the amount of time users spend attending to, or consuming content. We propose this leads to a phenomenon called digital rubbernecking, where content that is attention-grabbing because of toxicity or negativity is more likely to be surfaced in platforms that optimize for attention. We test this using a simulated social media environment and custom-built ranking algorithms that either prioritize attention or engagement signals. We hypothesize that algorithms optimized for attention are more likely to surface negative content, which in turn increases users' perceptions of the political extremity of others.</div>
+
+    <div class="pub-links">
+    </div>
   </li>
   <li class="pub" id="prosocial-ranking-challenge">
     <div class="pub-title"><a class="pub-title-link" href="#prosocial-ranking-challenge">The Prosocial Ranking Challenge: Reducing Polarization on Social Media without Sacrificing Engagement</a></div>
     <div class="pub-authors">with Jonathan Stray, George Beknazar-Yuzbashev, Kylan Rutherford, Mateusz Stalinski, and others</div>
     <p class="pub-abstract">We report the first direct comparisons of multiple alternative social media algorithms on multiple platforms on outcomes of societal interest. We used a browser extension to modify which posts were shown to desktop social media users, randomly assigning 9,386 users to a control group or one of five alternative ranking algorithms which simultaneously altered content across three platforms for six months during the US 2024 presidential election. This reduced our preregistered index of affective polarization by an average of 0.03 standard deviations (p &lt; 0.05), including a 1.5 degree decrease in differences between the 100 point inparty and outparty feeling thermometers. We saw reductions in active use time for Facebook (&minus;0.37 min/day) and Reddit (&minus;0.2 min/day), but an increase of 0.32 min/day (p &lt; 0.01) for X/Twitter. We saw an increase in reports of negative social media experiences but found no effects on well-being, news knowledge, outgroup empathy, perceptions of and support for partisan violence. This implies that bridging content can improve some societal outcomes without necessarily conflicting with the engagement-driven business model of social media.</p>
     <div class="pub-links">
-      <a href="https://arxiv.org/abs/2603.19626">PDF</a>
+      <a href="https://arxiv.org/abs/2603.19626">Arxiv</a>
     </div>
   </li>
   <li class="pub" id="out-partisan-exposure">
