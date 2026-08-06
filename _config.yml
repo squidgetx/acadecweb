@@ -13,6 +13,8 @@ nav:
     url: /
   - title: Research
     url: /research/
+  - title: CV
+    url: /cv-1.pdf
 
 # Build settings
 sass:

@@ -204,6 +204,20 @@ hr {
   &:hover { text-decoration: underline; }
 }
 
+.pub-anchor {
+  margin-left: 6px;
+  color: $gray-muted;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+  &:hover { text-decoration: underline; }
+}
+
+.pub-title:hover .pub-anchor,
+.pub-anchor:focus {
+  opacity: 1;
+}
+
 .wrapper-content:has(.pub:target) .pub:not(:target) .pub-title-link {
   color: $gray-muted;
 }
